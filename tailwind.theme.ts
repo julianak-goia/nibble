@@ -2,6 +2,10 @@ import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 export const extendTheme = {
+    fontFamily: {
+        ...defaultTheme.fontFamily,
+        sans: ['var(--font-open-sans)'],
+    },
     colors: {
         'primary': 'hsl(251, 43%, 43%, 1)',
         'primary-light': 'hsl(251, 43%, 43%, 0.1)',
@@ -21,7 +25,6 @@ export const extendTheme = {
         'gray-light': 'hsl(240, 1%, 64%, 0.16)',
         'gray-lighter': 'hsl(0, 0%, 97%, 0.08)',
         'light': 'hsl(0, 0%, 100%, 1)',
-
         'typography': {
             'dark': 'hsl(228, 38%, 15%, 1)',
             'secondary': 'hsl(240, 1%, 39%, 1)',
